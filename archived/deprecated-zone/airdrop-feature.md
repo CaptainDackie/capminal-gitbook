@@ -1,11 +1,11 @@
 ---
-description: How to setup an airdrop post on X using Captain Dackie
+description: How to setup an airdrop post on X using Captain Dackie (deprecated)
 ---
 
 # Airdrop Feature
 
 {% hint style="warning" %}
-The feature is temporarily disabled as we are upgrading Captain Dackie X Client.
+**NOTE:** The feature is temporarily disabled
 {% endhint %}
 
 This feature helps creators easily set up an airdrop post and ask participants to comment according to the instructions provided. Each participant who follows the instructions correctly will receive a reward.

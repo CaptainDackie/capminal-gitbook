@@ -13,4 +13,4 @@ There are 2 ways to interact with Captain Dackie:&#x20;
 
 Besides doing DeFAI tasks, you can ask Captain Dackie anything. He's loaded with the latest alpha on DeFAI and other projects in the crypto space.
 
-You can also chat with Captain Dackie to find out about top tokens on Capminal Gems, or ask about any [live airdrops](../../capminal/product-features/airdrop-feature.md).
+You can also chat with Captain Dackie to find out about top tokens on Capminal Gems, or ask about any [live airdrops](airdrop-feature.md).
