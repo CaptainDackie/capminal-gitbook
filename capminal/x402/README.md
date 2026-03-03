@@ -28,7 +28,7 @@ x402 extends HTTP 402 Payment Required to gate API access with onchain micropaym
 
 ## How it works
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Call a protected endpoint (e.g., `/x402/research`) without `X-PAYMENT`.
 2. Receive `402 Payment Required` with live payment instructions (price, network, recipient, time window, etc.).

@@ -2,7 +2,7 @@
 
 We provide a powerful web-based AI Terminal that enables users to trade seamlessly through a simple and intuitive interface.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Our AI-powered system understands natural language, assists users in making faster and smarter trading decisions.
 

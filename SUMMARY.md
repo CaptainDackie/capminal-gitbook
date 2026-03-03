@@ -17,6 +17,7 @@
     * [Mobile](capminal/product-features/our-interfaces/mobile.md)
   * [CAP Staking](capminal/product-features/cap-staking.md)
   * [CAP Guild](capminal/product-features/cap-guild.md)
+  * [API Key](capminal/product-features/api-key.md)
   * [Token Deployment](capminal/product-features/token-deployment.md)
   * [Smart DCA Feature](capminal/product-features/smart-dca-feature.md)
   * [Trading Fee](capminal/product-features/trading-fee.md)
