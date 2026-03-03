@@ -8,16 +8,18 @@ description: What is CAP Staking, how to stake, everything you need to know
 
 ## What is CAP Staking?
 
-CAP Staking is a token locking mechanism that rewards you with shares based on how long you commit to locking your tokens. When you stake your CAP tokens, you receive shares that are calculated using a multiplier system. The longer your lock period, the higher your multiplier, which means more shares for the same amount of tokens.
+CAP Staking is a token locking mechanism that rewards you with shares based on how long you commit to locking your tokens.&#x20;
+
+When you stake your CAP tokens, you receive shares that are calculated using a **multiplier system**. The longer your lock period, the higher your multiplier, which means more shares for the same amount of tokens.
 
 ## Key Benefits
 
 * **More Longer More Shares**: Lock your tokens longer to get a higher multiplier (up to 5x)
 * **Simple Process**: Easy to stake and unstake your tokens
-* **Earn CAP XP**: The first use case of CAP Staking is earning [CAP XP](cap-xp.md)
+* **Earn XP**: The first use case of CAP Staking is earning [XP](cap-guild.md#what-is-xp)
 
 {% hint style="info" %}
-There will be more use cases when staking **CAP** besides earning CAP XP. T.B.U soon
+There will be more use cases when staking **CAP** besides earning XP. T.B.U soon
 {% endhint %}
 
 ## Getting Started

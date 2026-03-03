@@ -7,7 +7,7 @@ description: Capminal x402 Flash Clanker Token Deployment API
 Deploy token very easily via API, no auth needed, no account needed, paid per request via x402. Designed for speed, clarity, and wallet‑native checkout.
 
 {% hint style="success" %}
-* Clanker tokens deployed via **Capminal x402 API** will be the same [**FEE STRUCTURE**](../product-features/deploy-clanker-token.md#fee-structure) as when you deploy on Capminal UI or using Captain Dackie on X.
+* Clanker tokens deployed via **Capminal x402 API** will be the same [**FEE STRUCTURE**](../product-features/token-deployment.md#fee-structure) as when you deploy on Capminal UI or using Captain Dackie on X.
 * Clanker tokens deployed via **Capminal x402 API** will use Clanker V4.&#x20;
 {% endhint %}
 

@@ -2,9 +2,9 @@
 description: Capminal can run as mobile app via Progressive Web App (PWA)
 ---
 
-# Mobile Support
+# Mobile
 
-User can install Capminal.ai mobile app following below steps:
+User can install Capminal mobile app following below steps:
 
 1\. Open [Capminal](https://www.capminal.ai/) on mobile browser (Safari/Chrome...)
 

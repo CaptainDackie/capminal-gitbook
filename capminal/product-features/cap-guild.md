@@ -1,29 +1,37 @@
 ---
-description: >-
-  CAP XP tracks users' Swap Volume, CAP Staking, Referrals, and Boosts on
-  Capminal. Every month, we use protocol fees to buy back CAP and reward top
-  users on the CAP XP leaderboard.
+description: Every transaction strengthens the network. Every stake builds influence.
 ---
 
-# CAP XP
+# CAP Guild
 
-## What is CAP XP
+## What is CAP Guild
 
-CAP XP tracks users' Swap Volume, CAP Staking, Referrals, and Boosts on Capminal. Every month, we use protocol fees to buy back CAP and reward top users on the CAP XP leaderboard.
+CAP Guild is the official community of Capminal users, builders, traders, and believers who power the ecosystem through every swap and every stake.
+
+Members swap using Capminal, stake $CAP, and earn XP that reflects their commitment and contribution. Every transaction strengthens the network. Every stake builds influence.
+
+CAP Guild is where liquidity turns into status, and engagement becomes rank.\
+Swap. Stake. Earn XP. Ascend.
+
+## What is XP
+
+XP is the Guild’s progression metric, a measure of active participation within the Capminal ecosystem. Guild members earn XP by swapping through Capminal and staking $CAP.&#x20;
+
+The more you engage, the more XP you accumulate.
 
 #### Monthly Capminal Protocol Fee Distribution Rate:
 
-<table><thead><tr><th width="575.41015625">#</th><th>Rate</th></tr></thead><tbody><tr><td>Team</td><td>40%</td></tr><tr><td>Buy Back CAP &#x26; Distribute to CAP XP Leaderboard</td><td>30%</td></tr><tr><td>Buy Back CAP &#x26; Burn</td><td>30%</td></tr></tbody></table>
+<table><thead><tr><th width="575.41015625">#</th><th>Rate</th></tr></thead><tbody><tr><td>Team</td><td>40%</td></tr><tr><td>Buy Back CAP &#x26; Distribute to Guild Leaderboard</td><td>30%</td></tr><tr><td>Buy Back CAP &#x26; Burn</td><td>30%</td></tr></tbody></table>
 
 {% hint style="info" %}
 Example:
 
 If Capminal Protocol fee is $5,000 this month
 
-→ CAP XP rewards = 30% \* $5,000 = **$1,500** / this month
+→ XP rewards = 30% \* $5,000 = **$1,500** / this month
 {% endhint %}
 
-The rules to earn CAP XP are simple and easy to understand, just based on referrals and volume.
+The rules to earn XP are simple and easy to understand, just based on referrals and volume.
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
@@ -35,10 +43,12 @@ Swap XP is the XP you earn by swapping on Capminal. The rules is as follows:
 * ETH/WETH is NOT calculated in Swap XP.
 
 {% hint style="success" %}
-If you swap **CAP** token, you will receive **35%** more Swap XP compared to swapping other tokens. For example: swap $100 CAP token = 135 Swap XP
+If you swap **CAP** token, you will receive **35%** more Swap XP compared to swapping other tokens.&#x20;
+
+For example: swap $100 CAP token = 135 Swap XP
 {% endhint %}
 
-## CAP Staking XP
+## Staking XP
 
 {% hint style="info" %}
 Please refer [CAP Staking](cap-staking.md) feature to learn how to stake CAP on Capminal, understand Multiplier and Shares
@@ -60,11 +70,11 @@ Example:
 The adjustment factor may be revised monthly in the future based on the weighting between trading volume and staking.
 {% endhint %}
 
-## Total CAP XP
+## Total XP
 
-CAP XP are calculated as follows:
+XP are calculated as follows:
 
-* CAP XP = ( Swap XP + Staking XP ) \* ( 1 + Boost)
+* XP = ( Swap XP + Staking XP ) \* ( 1 + Boost)
 
 {% hint style="info" %}
 Example:
@@ -73,16 +83,16 @@ Example:
 * Your Staking XP = 1000
 * Your Boosted = 20%
 
-→ Your CAP XP = (1000 + 1000) \* 120% = 2400
+→ Your Total XP = (1000 + 1000) \* 120% = 2400
 {% endhint %}
 
 ## Referrals and Boost
 
-Referrals represent the number of users you have invited. This number is used to boost your CAP XP. The rules are as follows:
+Referrals represent the number of users you have invited. This number is used to boost your XP. The rules are as follows:
 
 * Each referral has swap volume greater than 10 USD will be 1% boosted percentage.
 * There are no limit for the number of referrals you can invite.
-* Your CAP XP will be updated back fill if your boosted percentage increase.
+* Your XP will be updated back fill if your boosted percentage increase.
 
 {% hint style="info" %}
 The maximum boosted percentage is **25%** except how many referrals you have.

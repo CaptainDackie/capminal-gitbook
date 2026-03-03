@@ -22,7 +22,7 @@ We focus on the long-term vision for our CAP token, with these key highlights:
 * The Team and DAO Treasury allocations will be distributed after three months and six months, also with vesting.
 
 {% hint style="success" %}
-3% supply is for [CAP Points](../capminal/product-features/cap-xp.md) program. Don't miss out.
+3% supply is for [CAP Points](../capminal/product-features/cap-guild.md) program. Don't miss out.
 {% endhint %}
 
 <table><thead><tr><th width="239.43359375">#</th><th width="364.72265625">Detail</th><th>% Supply</th></tr></thead><tbody><tr><td>Public Sale</td><td>Fixed Supply</td><td>37.5%</td></tr><tr><td>Liquidity Pool</td><td>Fixed Supply</td><td>12.5%</td></tr><tr><td>VIRTUAL Stakers &#x26; Yappers</td><td>100% 3-month cliff followed by immediate unlocks</td><td>3%</td></tr><tr><td>CAP Points</td><td>100% 3-month cliff followed by immediate unlocks</td><td>3%</td></tr><tr><td>DACKIE Premium</td><td>100% 3-month cliff followed by immediate unlocks</td><td>3%</td></tr><tr><td>Marketing (KOL &#x26; Media)</td><td>100% 3-month cliff followed by immediate unlocks</td><td>1%</td></tr><tr><td>Burned</td><td>100% 3-month cliff followed by immediate unlocks and burn</td><td>40%</td></tr></tbody></table>
@@ -44,7 +44,7 @@ To visualize the vesting schedule, refer this diagram.
 When designing the use cases for Capminal (CAP), our focus is on increasing scarcity and reducing the supply of CAP over time. Here are the key use cases:
 
 * Staking on [Virtuals Agent Staking](https://app.virtuals.io/stake-agent?id=23397) to earn Virgen Points and CAP Points.
-* Share Protocol Fee via [CAP Points](../capminal/product-features/cap-xp.md).
+* Share Protocol Fee via [CAP Points](../capminal/product-features/cap-guild.md).
 * Monthly buyback and burn of CAP using trading fees and Clanker UI fees.
 * Main payment token within the Capminal ecosystem:
   * Use CAP for VIP subscriptions to enjoy reduced trading fees and access to priority features.

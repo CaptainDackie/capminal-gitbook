@@ -1,0 +1,2 @@
+# CAP Skill for OpenClaw
+

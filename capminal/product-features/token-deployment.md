@@ -4,19 +4,19 @@ description: >-
   Clanker
 ---
 
-# Deploy Clanker Token
+# Token Deployment
 
-## Clanker V4 Introduction
+## Clanker Introduction
 
-Clanker V4 is now live with powerful new features. It allows flexible setup of Uniswap V4 pools, better control over liquidity ranges, and smarter reward distribution.
+Clanker provide flexible setup of Uniswap V4 pools, better control over liquidity ranges, and smarter reward distribution.
 
-Pool fees are now fully customizable. Fees can be set from 0% to 10%, split across up to 7 addresses, or adjusted by liquidity range using Static or Dynamic Hooks, instead of the fixed 1% fee in V3.
+Pool fees are now fully customizable. Fees can be set from **1% to 10%**, split across up to 7 addresses, or adjusted by liquidity range using Static or Dynamic Hooks, instead of the fixed 1% fee in V3.
 
-Clanker V4 also introduces an extension system for deeper token customization, including AuctionSnipe, DevBuy, ClankerVault, and ClankerAirdrop. For full details, refer to the official [Clanker Documentation](https://clanker.gitbook.io/clanker-documentation/core-contracts/v4.0.0).
+Support extension system for deeper token customization, including AuctionSnipe, DevBuy, ClankerVault, and ClankerAirdrop. For full details, refer to the official [Clanker Documentation](https://clanker.gitbook.io/clanker-documentation/core-contracts/v4.0.0).
 
 ## What types of configurations does Capminal support
 
-Since Capminal is an AI Agent and users will deploy tokens via prompting on our client, we make it more simple for our users to launch tokn, currently we simplified the configuration process for launching Clanker tokens.&#x20;
+Since Capminal is an AI Agent and users will deploy tokens via prompting on our client, we make it more simple for our users to launch token, currently we simplified the configuration process for launching Clanker tokens.&#x20;
 
 We will allow customization of the following 3 configurations:
 

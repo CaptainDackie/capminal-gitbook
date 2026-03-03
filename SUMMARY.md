@@ -9,20 +9,24 @@
 ## CAPMINAL
 
 * [Product Features](capminal/product-features/README.md)
-  * [Capminal Wallet](capminal/product-features/capminal-wallet.md)
-  * [Capminal Agent](capminal/product-features/capminal-agent.md)
-  * [Capminal Gems](capminal/product-features/capminal-gems.md)
+  * [CAP Wallet](capminal/product-features/cap-wallet.md)
+  * [Our Interfaces](capminal/product-features/our-interfaces/README.md)
+    * [AI Agent](capminal/product-features/our-interfaces/ai-agent.md)
+    * [AI Terminal](capminal/product-features/our-interfaces/ai-terminal.md)
+    * [Telegram Bot](capminal/product-features/our-interfaces/telegram-bot.md)
+    * [Mobile](capminal/product-features/our-interfaces/mobile.md)
   * [CAP Staking](capminal/product-features/cap-staking.md)
-  * [CAP XP](capminal/product-features/cap-xp.md)
-  * [Telegram Bot](capminal/product-features/telegram-bot.md)
-  * [Deploy Clanker Token](capminal/product-features/deploy-clanker-token.md)
+  * [CAP Guild](capminal/product-features/cap-guild.md)
+  * [Token Deployment](capminal/product-features/token-deployment.md)
   * [Smart DCA Feature](capminal/product-features/smart-dca-feature.md)
   * [Trading Fee](capminal/product-features/trading-fee.md)
 * [x402](capminal/x402/README.md)
   * [x402 Orchestrator](capminal/x402/x402-orchestrator.md)
   * [Clanker Deploy API](capminal/x402/clanker-deploy-api.md)
   * [Deep Reseach API (paused)](capminal/x402/deep-reseach-api-paused.md)
-* [Mobile Support](capminal/mobile-support.md)
+* [ERC-8004](capminal/erc-8004.md)
+* [CAP Skill for OpenClaw](capminal/cap-skill-for-openclaw.md)
+* [OpenCap](capminal/opencap.md)
 
 ## CAP TOKEN
 
@@ -37,9 +41,10 @@
 ## Archived
 
 * [Deprecated Zone](archived/deprecated-zone/README.md)
+  * [Capminal Gems](archived/deprecated-zone/capminal-gems.md)
   * [Lucky Draw Feature](archived/deprecated-zone/lucky-draw-feature.md)
   * [Airdrop Feature](archived/deprecated-zone/airdrop-feature.md)
   * [Real-time Insight Update](archived/deprecated-zone/real-time-insight-update.md)
-  * [Gas Sponsorship via Paymaster (deprecated)](archived/deprecated-zone/gas-sponsorship-via-paymaster-deprecated.md)
+  * [Gas Sponsorship via Paymaster](archived/deprecated-zone/gas-sponsorship-via-paymaster.md)
   * [Deploy Clanker V3 Token (legacy)](archived/deprecated-zone/deploy-clanker-v3-token-legacy.md)
   * [Chatbot Feature](archived/deprecated-zone/chatbot-feature.md)
