@@ -5,7 +5,7 @@ description: Gas sponsored by Capminal via Coinbase Paymaster
 # Gas Sponsorship via Paymaster
 
 {% hint style="warning" %}
-Since upgrading from the Smart Wallet (based on contracts) to the [Capminal Wallet](../../capminal/product-features/cap-wallet.md) (a server-based wallet), we no longer support Paymaster. This change is intended to support future multichain capabilities.
+Since upgrading from the Smart Wallet (based on contracts) to the [Agentic Wallet](../../capminal/product-features/agentic-wallet.md) (a server-based wallet), we no longer support Paymaster. This change is intended to support future multichain capabilities.
 {% endhint %}
 
 {% hint style="success" %}

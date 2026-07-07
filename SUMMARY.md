@@ -9,8 +9,7 @@
 ## CAPMINAL
 
 * [Product Features](capminal/product-features/README.md)
-  * [CAP Wallet](capminal/product-features/cap-wallet.md)
-  * [Wallet API Key](capminal/product-features/wallet-api-key.md)
+  * [Agentic Wallet](capminal/product-features/agentic-wallet.md)
   * [CAP Interfaces](capminal/product-features/cap-interfaces/README.md)
     * [AI Agent](capminal/product-features/cap-interfaces/ai-agent.md)
     * [AI Terminal](capminal/product-features/cap-interfaces/ai-terminal.md)

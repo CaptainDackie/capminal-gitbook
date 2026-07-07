@@ -18,8 +18,8 @@ This is what turns Cap Wallet from a passive key store into a **true agentic wal
 
 Agents interact with Cap Wallet through a **Wallet API Key** instead of a private key.
 
-{% content-ref url="../product-features/wallet-api-key.md" %}
-[wallet-api-key.md](../product-features/wallet-api-key.md)
+{% content-ref url="../product-features/agentic-wallet.md" %}
+[agentic-wallet.md](../product-features/agentic-wallet.md)
 {% endcontent-ref %}
 
 This is the key design decision behind the agentic wallet:
