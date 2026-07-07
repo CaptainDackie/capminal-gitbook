@@ -33,13 +33,13 @@ You can withdraw or transfer funds by sending natural-language commands, such as
 * `Send all [token_address] to [your_main_wallet_address]`
 * `Transfer all ETH to [your_main_wallet_address]`
 
+<figure><img src="../../.gitbook/assets/Screenshot 2026-07-07 at 11.55.57.png" alt="Wallet API Key screen"><figcaption></figcaption></figure>
+
 ## Agent Access Through API Key
 
 AI agents and external clients access your Agentic Wallet through a **Wallet API Key**, not a private key.
 
 The Wallet API Key system allows users and builders to securely access CAP services through a standardized authentication mechanism. You can generate an API Key and import it into external clients such as OpenClaw or Hermes to execute wallet, trading, and deployment operations.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2026-07-07 at 11.55.57.png" alt="Wallet API Key screen"><figcaption></figcaption></figure>
 
 ## Why API Keys Matter
 
@@ -72,28 +72,3 @@ You can manage your keys in the dashboard:
 * **Delete Key:** permanently remove a key if it is no longer needed or has security issues.
 
 Key rotation and deletion help keep your Agentic Wallet secure while still allowing trusted agents and clients to operate on your behalf.
-
-## For Builders
-
-Builders can integrate Wallet API Key into their dApps when they need:
-
-* Wallet infrastructure
-* Trading execution
-* Token deployment
-
-CAP provides the wallet and execution infrastructure so builders can focus on product development.
-
-## Authentication Example
-
-All API requests must include the API Key in the request header:
-
-```http
-CAP_API_KEY: YOUR_CAP_API_KEY
-```
-
-Example:
-
-```bash
-curl -X GET https://api.cap.network/v1/wallet \
-  -H "CAP_API_KEY: YOUR_CAP_API_KEY"
-```

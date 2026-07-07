@@ -226,6 +226,10 @@ model:
 Keep your `OPENCAP_API_KEY` secret. Anyone with your key can spend your daily Inference Credit. You can revoke and regenerate keys at any time from the dashboard.
 {% endhint %}
 
+{% hint style="danger" %}
+**Important:** `CAP_API_KEY` and `OPENCAP_API_KEY` are different keys. `CAP_API_KEY` controls your Capminal Agentic Wallet, while `OPENCAP_API_KEY` gives access to OpenCAP Gateway for using LLM models.
+{% endhint %}
+
 Open any key to see its live spend, usage, and budget — set a per-key daily cap, change its expiration, or revoke it on the spot.
 
 <figure><img src="../../.gitbook/assets/opencap_detail_key.png" alt=""><figcaption></figcaption></figure>
