@@ -5,7 +5,7 @@ description: Earn Perpetual AI Compute
 # Mint CAPU
 
 {% hint style="info" %}
-**CAPU** is the compute asset of the Capminal. Holding **staked CAPU** gives you a daily allowance of Inference Credit on the [OpenCAP Gateway](../opencap/gateway.md), **$1 of inference usage per CAPU, every day,** without ever selling your CAP.
+**CAPU** is the compute asset of the Capminal. Holding **staked CAPU** gives you a daily allowance of Inference Credit on [OpenCAP](../opencap.md), **$1 of inference usage per CAPU, every day,** without ever selling your CAP.
 {% endhint %}
 
 {% hint style="info" %}
@@ -56,7 +56,7 @@ Solid arrows = the way in (stake → mint → use). Dotted arrows = the way out 
 
 ## Inference Credit: what you actually get
 
-When you **stake CAPU**, the OpenCAP Gateway watches your wallet and grants you Inference Credit:
+When you **stake CAPU**, OpenCAP watches your wallet and grants you Inference Credit:
 
 * **$1 of inference usage per day, per staked CAPU.** Stake 50 CAPU → $50/day of inference.
 * Credit **resets every day at 00:00 UTC.** It does **not** roll over — unused credit today is gone tomorrow. Think of it as a daily allowance, not a balance.
@@ -282,4 +282,4 @@ sCAP is a **non-transferable** receipt minted by the ScapStaking contract — it
 
 ***
 
-_Inference Credit is $1/CAPU/day on the OpenCAP Gateway, renewed daily at 00:00 UTC and non-accumulating. Mint-price settings shown are the current on-chain values and may be recalibrated; recalibration never affects already-minted CAPU or your CAP exit ratio._
+_Inference Credit is $1/CAPU/day on OpenCAP, renewed daily at 00:00 UTC and non-accumulating. Mint-price settings shown are the current on-chain values and may be recalibrated; recalibration never affects already-minted CAPU or your CAP exit ratio._
