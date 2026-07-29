@@ -137,7 +137,7 @@ So a full exit from compute back to CAP takes about **1 day + 7 days ≈ 8 days*
 
 {% hint style="success" %}
 * While CAP is staked as sCAP, you keep earning **100% of CAP staking rewards** — locked or not.&#x20;
-* When you burn CAPU to exit, you get back CAP based on **your original lock ratio**, _not_ today's mint price. Early minters are protected — a later price change can never shrink the CAP you're owed.
+* When you burn CAPU to exit, you get back CAP based on **your original lock ratio**, _not_ today's mint price. Early minters are protected — a later price change can never shrink the CAP you're owed. See [Burning: your rate, your ceiling](mint-capu.md#burning-your-rate-your-ceiling) for exactly how that ratio is computed, and why you can only burn what you minted.
 {% endhint %}
 
 ***
@@ -189,6 +189,76 @@ You don't need the math. Here's what it means in practice with the **current liv
 
 ***
 
+## Burning: your rate, your ceiling
+
+The mint price climbs. Your **exit** price does not move with it.
+
+Burning never touches the bonding curve. The contract simply returns the sCAP **you personally locked**, pro-rata:
+
+```
+sCAP returned  =  your locked sCAP  ×  ( CAPU you burn ÷ CAPU you minted )
+```
+
+> sCAP is your 1:1 receipt for staked CAP, so the sCAP figures here and the CAP figures in the mint-price table above are the same numbers.
+
+Read that as a guarantee about your principal, not a trade. You get back exactly what you put in — no more, no less. If the mint price has tripled since you minted, you still unlock **your** original sCAP. A later price change can neither shrink nor inflate what you're owed.
+
+Two rules follow from that formula.
+
+### Rule 1 — You burn at the rate you minted at
+
+If you minted more than once, the contract does **not** track separate lots. It keeps two running totals per wallet — total sCAP locked, total CAPU minted — so your exit rate is the **weighted average** of everything you've minted.
+
+An example. You mint twice, at very different points on the curve:
+
+| Mint       |     sCAP locked | CAPU received | Rate at the time  |
+| ---------- | --------------: | ------------: | ----------------- |
+| First      |     700,000 sCAP |      2.0 CAPU | 350,000 sCAP/CAPU |
+| Second     |   1,900,000 sCAP |      2.0 CAPU | 950,000 sCAP/CAPU |
+| **Totals** | **2,600,000 sCAP** |  **4.0 CAPU** | **650,000 sCAP/CAPU** |
+
+Burn any 1 CAPU and you unlock **650,000 sCAP** — the blended rate. You cannot pick the cheap lot or the expensive one; there is no FIFO, no lot selection. Burn all 4 CAPU and you get the full 2,600,000 sCAP back either way.
+
+### Rule 2 — You can only burn what you minted
+
+Your minted balance is a hard ceiling. Try to burn more and the transaction reverts.
+
+This matters if you also **bought** CAPU on the market: those tokens have no sCAP sitting behind them, so they cannot be redeemed. Only the CAPU you minted yourself is backed by locked collateral.
+
+* Minted 30 CAPU, wallet holds 100 → you can burn **30**. The other 70 are market CAPU.
+* Bought CAPU but never minted → you can burn **0**.
+
+Market CAPU is still perfectly useful — stake it for Inference Credit, or sell it back on Aerodrome. It just isn't a claim on anyone's collateral. (This is also why the buy-cheap-and-burn arbitrage below is only available to existing minters.)
+
+### Where you see this in the app
+
+The Mint tab shows the **current** curve rate, in both directions so you can read it whichever way you think:
+
+<figure><img src="../../.gitbook/assets/capu-mint-modal-rate.png" alt=""><figcaption></figcaption></figure>
+
+The Burn tab shows **your** numbers instead — never the curve:
+
+<figure><img src="../../.gitbook/assets/capu-burn-modal-rate.png" alt=""><figcaption></figcaption></figure>
+
+Notice the two screenshots were taken moments apart, and the rates disagree on purpose:
+
+| Where            | What it says                    | What it means                             |
+| ---------------- | ------------------------------- | ----------------------------------------- |
+| Mint tab         | 1 CAPU = **957,695** sCAP       | What it costs to mint **right now**       |
+| Burn tab         | 1 CAPU = **335,518** sCAP       | What **this wallet** locked when it minted |
+
+That gap is the whole point — this wallet minted early, so it exits at its own rate, untouched by everything the curve has done since.
+
+Three fields to know on the Burn tab:
+
+* **`Your rate`** — your weighted-average exit rate, straight from your own locked collateral.
+* **`Your burnable`** — the contract ceiling: total CAPU you've minted and not yet burned.
+* **`Burnable · CAPU`** (next to MAX) — what you can burn **at this moment**: the lesser of your wallet balance and your ceiling. MAX fills exactly this.
+
+The last two can differ, and that's expected: burning spends CAPU from your wallet, so **staked CAPU doesn't count** until you unstake it. If you've staked everything you minted, your ceiling stays intact but your burnable-right-now is zero. Unstake first (1-day cooldown), then burn.
+
+***
+
 ## Arbitrage: how the market keeps CAPU in line
 
 CAPU isn't only **mintable** — it's also **tradable**. CAPU is seeded into **two liquidity pools on Aerodrome — CAPU/CAP and CAPU/WETH** — so anyone can **buy CAPU directly** and stake it for Inference Credit, instead of going the long way round (**buy CAP → stake to sCAP → mint CAPU**).
@@ -203,7 +273,7 @@ Whenever an asset has two prices, arbitrage pulls them together. The bonding-cur
 * **If CAPU trades _above_ the mint rate** (market price > mint price), minting is cheaper than buying. A user can **mint fresh CAPU on the curve and sell it into the pool**, capturing the spread. That sell pressure pushes the market price back **down** toward the mint rate.
 * **If CAPU trades _below_ the mint rate** (market price < mint price), buying is cheaper than minting. A user has two profitable moves, both of which add buy pressure and push the price back **up**:
   * **Buy CAPU and stake it** — get the same **$1/day** of Inference Credit for less than it would cost to mint.
-  * **Existing minters close their position cheaply** — anyone who previously minted CAPU (and locked sCAP as collateral) can buy CAPU on the market at below-mint-price, burn it, and unlock their original sCAP for less than the original mint cost. Their buying adds upward pressure on CAPU price. _(Note: this path requires a prior minting position — pure market buyers cannot burn CAPU to unlock CAP, as the contract tracks each user's own minted balance.)_
+  * **Existing minters close their position cheaply** — anyone who previously minted CAPU (and locked sCAP as collateral) can buy CAPU on the market at below-mint-price, burn it, and unlock their original sCAP for less than the original mint cost. Their buying adds upward pressure on CAPU price. _(This path needs a prior minting position — see [Burning: your rate, your ceiling](mint-capu.md#burning-your-rate-your-ceiling).)_
 
 So rational users naturally close any gap, and the CAPU market price tracks the bonding-curve mint rate — while everyone still keeps a fast, no-cooldown way to get in and out by simply buying or selling on Aerodrome.
 
@@ -250,6 +320,18 @@ Does unused Inference Credit carry over?&#x20;
 What if I just want inference access and don't hold CAP?&#x20;
 
 → Use Path A — buy CAPU on the market and stake it. Done.
+
+I minted twice at different prices. Which rate do I burn at?&#x20;
+
+→ The weighted average of the two. The contract keeps one running total of sCAP locked and one of CAPU minted per wallet — there are no separate lots, so you can't choose which mint to unwind. The app shows your blended rate as **Your rate** on the Burn tab.
+
+I bought CAPU on the market. Can I burn it to unlock sCAP?&#x20;
+
+→ No. Only CAPU **you** minted is backed by locked sCAP, and that minted amount is a hard ceiling on how much you can burn. Market CAPU is still fully usable — stake it for Inference Credit, or sell it on Aerodrome.
+
+Why is my burnable amount lower than what I minted?&#x20;
+
+→ Burning spends CAPU from your wallet, so staked CAPU doesn't count. Unstake it first (1-day cooldown), then burn. Your ceiling never went away — it just isn't reachable until the CAPU is back in your wallet.
 
 How long does it take to get my CAP back?&#x20;
 
