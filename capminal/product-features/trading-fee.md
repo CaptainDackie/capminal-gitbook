@@ -6,7 +6,7 @@ description: Capminal trading fee structure for all our clients
 
 ## Capminal Swap Fee
 
-Capminal charges a **0.8% swap fee** on the total transaction volume for every SWAP executed through the Capminal ecosystem.
+Capminal charges a **0.3% swap fee** on the total transaction volume for every SWAP executed through the Capminal ecosystem.
 
 This fee applies to all Capminal clients, including:
 
@@ -24,5 +24,5 @@ The fee is automatically applied to each SWAP transaction at the time of executi
 
 | Product              | Swap Fee                  |
 | -------------------- | ------------------------- |
-| Capminal Clients     | 0.8% per SWAP transaction |
+| Capminal Clients     | 0.3% per SWAP transaction |
 | Capminal Orbs Market | 0.3% per SWAP transaction |
