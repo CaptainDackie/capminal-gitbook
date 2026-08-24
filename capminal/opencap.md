@@ -105,6 +105,30 @@ When you open the deposit panel, you can choose how to send your funds:
 **Small deposits aren't lost.** If you send less than the minimum, the amount is **parked** and activates automatically once your total reaches the minimum — you'll see the progress on the Top-Up card.
 {% endhint %}
 
+### Redeem an Inference Voucher
+
+Got a `CAP-…` voucher code? Redeem it on the dashboard and the credit lands on your balance **instantly** — no wallet payment, no on-chain wait.
+
+1. Go to [capminal.ai/gateway](https://www.capminal.ai/gateway) and hit **Connect Wallet** to sign in.
+
+<figure><img src="../.gitbook/assets/opencap_voucher_signin.png" alt=""><figcaption><p>Sign in with your wallet to open the dashboard.</p></figcaption></figure>
+
+2. Scroll to the **Top-Up · USDC** card and click **Redeem Voucher Code**.
+
+<figure><img src="../.gitbook/assets/opencap_voucher_button.png" alt=""><figcaption><p>The Redeem Voucher Code button sits right under Top-Up USDC.</p></figcaption></figure>
+
+3. Paste your code (`CAP-XXXXX-XXXXX-XXXXX-XXXXX`) and hit **Redeem**. Your balance updates on the spot.
+
+<figure><img src="../.gitbook/assets/opencap_voucher_input.png" alt=""><figcaption><p>Enter the voucher code and redeem.</p></figcaption></figure>
+
+4. Scroll down to the **API Keys** card, click **+ Create Key**, name it, and confirm — you now have an `OPENCAP_API_KEY` funded by the voucher.
+
+<figure><img src="../.gitbook/assets/opencap_voucher_createkey.png" alt=""><figcaption><p>Create an API key to start spending your voucher balance.</p></figcaption></figure>
+
+{% hint style="warning" %}
+A voucher credits its **exact face value** — the top-up bonus doesn't apply. Codes are **single-use** and limited to **one voucher per account**, so a redeem can't be undone.
+{% endhint %}
+
 ***
 
 ## Quick Start
